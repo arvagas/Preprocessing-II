@@ -228,7 +228,7 @@ header nav a:last-child {
   border-bottom: dashed 2px #C0C0C0;
 }
 @media (max-width:500px) {
-  .home .top-section .top-img {
+  .home .top-section {
     width: 90%;
     margin: 0 5%;
   }
@@ -238,7 +238,7 @@ header nav a:last-child {
 }
 @media (max-width:500px) {
   .home .top-section .text-content {
-    padding: 2% 5%;
+    padding: 2% 0;
   }
 }
 .home .content-section {
@@ -251,6 +251,8 @@ header nav a:last-child {
   .home .content-section {
     flex-direction: column;
     justify-content: center;
+    width: 90%;
+    margin: 30px 5%;
   }
 }
 .home .content-section .text-content {
@@ -260,7 +262,6 @@ header nav a:last-child {
 @media (max-width:500px) {
   .home .content-section .text-content {
     width: 100%;
-    padding: 0 5%;
   }
 }
 .home .content-section .img-content {
@@ -270,7 +271,7 @@ header nav a:last-child {
 @media (max-width:500px) {
   .home .content-section .img-content {
     width: 100%;
-    padding: 0 5%;
+    padding: 0;
   }
 }
 .home .content-section .img-content img {
@@ -287,7 +288,7 @@ header nav a:last-child {
 @media (max-width:500px) {
   .home .inverse-content .text-content {
     order: -1;
-    padding: 0 5%;
+    padding: 0;
   }
 }
 .home .inverse-content .img-content {
@@ -296,7 +297,7 @@ header nav a:last-child {
 }
 @media (max-width:500px) {
   .home .inverse-content .img-content {
-    padding: 0 5%;
+    padding: 0;
   }
 }
 .home .content-destination {
@@ -316,6 +317,7 @@ header nav a:last-child {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+  margin: 0 5%;
 }
 @media (max-width:500px) {
   .home .content-pick {
@@ -328,9 +330,9 @@ header nav a:last-child {
 }
 @media (max-width:500px) {
   .home .content-pick .destination {
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+    width: 74%;
+    margin-left: 12%;
+    margin-right: 12%;
   }
 }
 .home .btn {
