@@ -172,14 +172,31 @@ header {
   display: flex;
   justify-content: center;
   align-items: baseline;
-  margin-top: 2%;
+  margin-top: 1%;
   border-bottom: dashed 2px #C0C0C0;
   padding-bottom: 20px;
 }
+@media (max-width:500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+}
+@media (max-width:500px) {
+  header h1 {
+    font-size: 3.2rem;
+  }
+}
 header nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   margin-left: 275px;
+}
+@media (max-width:500px) {
+  header nav {
+    margin: 0;
+  }
 }
 header nav a {
   text-decoration: none;
@@ -187,6 +204,11 @@ header nav a {
   margin-left: 30px;
   color: #212529;
   padding: 5px;
+}
+@media (max-width:500px) {
+  header nav a {
+    padding: 10px;
+  }
 }
 header nav a:last-child {
   margin-right: 25px;
@@ -214,13 +236,29 @@ header nav a:last-child {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width:500px) {
+  .home .content-section {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width:500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width:500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -232,6 +270,11 @@ header nav a:last-child {
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
+}
+@media (max-width:500px) {
+  .home .inverse-content .text-content {
+    order: -1;
+  }
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
@@ -250,9 +293,19 @@ header nav a:last-child {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width:500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width:500px) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
 }
 .home .btn {
   background-color: teal;
@@ -262,4 +315,9 @@ header nav a:last-child {
   border-radius: 10px;
   padding: 10px 0;
   margin-right: 18%;
+}
+@media (max-width:500px) {
+  .home .btn {
+    background-color: #17A2B8;
+  }
 }
