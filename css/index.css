@@ -170,19 +170,26 @@ img {
 }
 header {
   display: flex;
-  justify-content: space-between;
-  margin: 20px 0;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 2%;
   border-bottom: dashed 2px #C0C0C0;
+  padding-bottom: 20px;
 }
 header nav {
   display: flex;
   justify-content: flex-end;
+  margin-left: 275px;
 }
 header nav a {
   text-decoration: none;
   font-size: 1.6rem;
   margin-left: 30px;
   color: #212529;
+  padding: 5px;
+}
+header nav a:last-child {
+  margin-right: 25px;
 }
 .footer {
   width: 100%;
@@ -194,6 +201,12 @@ header nav a {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .top-section {
+  border-bottom: dashed 2px #C0C0C0;
+}
+.home .top-section .text-content {
+  margin: 2% 0;
 }
 .home .content-section {
   margin: 30px 0;
