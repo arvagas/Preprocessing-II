@@ -168,6 +168,22 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  border-bottom: dashed 2px #C0C0C0;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin-left: 30px;
+  color: #212529;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -232,5 +248,5 @@ img {
   color: white;
   border-radius: 10px;
   padding: 10px 0;
-  margin-right: 15%;
+  margin-right: 18%;
 }
