@@ -184,21 +184,21 @@ header {
   }
 }
 @media (max-width:500px) {
-  header h1 {
+  h1 {
     font-size: 3.2rem;
   }
 }
-header nav {
+nav {
   display: flex;
   justify-content: space-around;
   margin-left: 275px;
 }
 @media (max-width:500px) {
-  header nav {
+  nav {
     margin: 0;
   }
 }
-header nav a {
+nav a {
   text-decoration: none;
   font-size: 1.6rem;
   margin-left: 30px;
@@ -206,11 +206,11 @@ header nav a {
   padding: 5px;
 }
 @media (max-width:500px) {
-  header nav a {
+  nav a {
     padding: 10px;
   }
 }
-header nav a:last-child {
+nav a:last-child {
   margin-right: 25px;
 }
 .footer {
@@ -250,8 +250,6 @@ header nav a:last-child {
 @media (max-width:500px) {
   .home .content-section {
     flex-direction: column;
-    justify-content: center;
-    width: 90%;
     margin: 30px 5%;
   }
 }
@@ -262,6 +260,7 @@ header nav a:last-child {
 @media (max-width:500px) {
   .home .content-section .text-content {
     width: 100%;
+    padding: 0;
   }
 }
 .home .content-section .img-content {
@@ -276,6 +275,11 @@ header nav a:last-child {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width:500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -317,11 +321,11 @@ header nav a:last-child {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
-  margin: 0 5%;
 }
 @media (max-width:500px) {
   .home .content-pick {
     flex-direction: column;
+    margin: 0 5%;
   }
 }
 .home .content-pick .destination {
@@ -330,9 +334,9 @@ header nav a:last-child {
 }
 @media (max-width:500px) {
   .home .content-pick .destination {
-    width: 74%;
-    margin-left: 12%;
-    margin-right: 12%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 .home .btn {
@@ -348,5 +352,6 @@ header nav a:last-child {
   .home .btn {
     background-color: #17A2B8;
     margin: 0 auto;
+    font-size: 2rem;
   }
 }
